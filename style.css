@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* Orange: hsl(25, 97%, 53%)
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+button{
+    font-family: inherit;
+}
+
+p{
+    line-height: 1.8;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.front, .thank-you{
+    background-color: hsl(213, 19%, 18%);
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+}
+
+.front img{
+    background-color: hsl(213, 19%, 28%);
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.front ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.front ul li button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 28%);
+    color: white;
+    padding-top: 0.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.front ul li button:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.front ul li button:focus{
+    background-color: hsl(217, 12%, 63%);
+}
+
+.container{
+    width: 400px;
+}
+
+.card{
+    padding: 30px;
+    overflow: hidden;
+}
+
+
+h1{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-submit{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px 0 8px;
+    border-radius: 25px;
+    margin-top: 30px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-submit:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.thank-you{
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.thank-you img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thank-you p.gray{
+    background-color: hsl(213, 19%, 28%);
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    padding: 0.3rem 1rem 0.1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
